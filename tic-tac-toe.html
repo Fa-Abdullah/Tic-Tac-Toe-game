@@ -77,7 +77,7 @@ function checkWin() {
   ];
 
   return winningCombos.some(combo => {
-    const [a, b, c] = combo;
+    const [a, b, c] = combo; 
     return cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent;
   });
 }
